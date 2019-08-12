@@ -1,22 +1,20 @@
-"use strict";
+const btnLoad = document.querySelector('.btn-load');
+const btnSave = document.querySelector('.btn-save');
+const textarea = document.querySelector('textarea');
 
-// service worker registration - remove if you're not going to use it
+console.log(btnLoad, btnSave, textarea);
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
+btnSave.addEventListener('click', function() {
+   //console.log(textarea.value);
 
-// place your code below
+   localStorage.setItem('tekst', textarea.value);
+});
 
+btnLoad.addEventListener('click', function(e) {
+   if (localStorage.getItem('tekst').length > 0) {
+      console.log(localStorage.getItem('tekst'));
 
-console.log(`Hello world!`);
-
-
+      textarea.value = localStorage.getItem('tekst');
+      //textarea.value = 'na chama';
+   }
+});

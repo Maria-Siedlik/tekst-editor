@@ -1,4 +1,4 @@
-# Prosty Edytor tekstowy
+# Prosty Edytor tekstowy ✎
 
 ## Ćwiczenie wykonane w ramach, w kursu: **WTF Co Ten Frontend**
 

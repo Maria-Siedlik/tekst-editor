@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Site title</title>
+      <meta name="description" content="Description" />
+
+      <!-- Title -->
+      <meta property="og:title" content="" />
+      <!-- OPTIONAL description. 2-4 sentences. -->
+      <meta property="og:description" content="" />
+      <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+      <meta property="og:url" content="" />
+      <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+      <meta
+         property="og:image"
+         content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
+      />
+
+      <link rel="manifest" href="manifest.json" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
+
+      <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+
+      <link rel="stylesheet" href="css/main.css" />
+   </head>
+   <body>
+      <main>
+         <header><h1 class="header__title">My super-cool text editor</h1></header>
+         <section class="editor">
+            <div class="editor__wrap">
+               <textarea placeholder="You can type here ☻"></textarea>
+            </div>
+            <div class="editor__buttons">
+               <button class="btn-load">load</button>
+               <button class="btn-save">save</button>
+            </div>
+            <div class="editor__description">
+               <p>
+                  Prosty Edytor tekstowy wykonany w ramach ćwiczeń, w kursie
+                  <strong>WTF Co Ten Frontend</strong>. <BR />Zapisuje do pamięci lakalnej tekst
+                  wpisywany w pole tekstowe po wciśnięciu butonu <strong>SAVE</strong> oraz wypisuje
+                  w polu tekstowym wcześniej zapisany tekst za pomocą buttonu <strong>LOAD</strong>.
+               </p>
+            </div>
+         </section>
+         <img src="assets/img/edytor_bottom.svg" alt="" />
+      </main>
+      <a href="https://www.freepik.com/free-photos-vectors/people"
+         >People vector created by azerbaijan_stockers - www.freepik.com</a
+      >
+      <script src="js/main.js"></script>
+   </body>
+</html>

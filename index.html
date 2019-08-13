@@ -31,13 +31,18 @@
       <main>
          <header><h1 class="header__title">My super-cool text editor</h1></header>
          <section class="editor">
-            <div class="editor__wrap">
-               <textarea placeholder="You can type here ☻"></textarea>
-            </div>
-            <div class="editor__buttons">
-               <button class="btn-load">load</button>
-               <button class="btn-save">save</button>
-            </div>
+            <form class="editor__wrap">
+               <p>
+                  <label for="message">Youre message</label>
+                  <textarea id="message" placeholder="You can type here ☻"></textarea>
+               </p>
+
+               <div class="editor__buttons">
+                  <button class="btn-load">load</button>
+                  <button class="btn-save">save</button>
+               </div>
+            </form>
+
             <div class="editor__description">
                <p>
                   Prosty Edytor tekstowy wykonany w ramach ćwiczeń, w kursie

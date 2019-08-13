@@ -4,13 +4,14 @@ const textarea = document.querySelector('textarea');
 
 console.log(btnLoad, btnSave, textarea);
 
-btnSave.addEventListener('click', function() {
+btnSave.addEventListener('click', function(e) {
    //console.log(textarea.value);
-
+   e.preventDefault();
    localStorage.setItem('tekst', textarea.value);
 });
 
 btnLoad.addEventListener('click', function(e) {
+   e.preventDefault();
    if (localStorage.getItem('tekst').length > 0) {
       console.log(localStorage.getItem('tekst'));
 
